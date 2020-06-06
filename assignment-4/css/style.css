@@ -1,0 +1,402 @@
+@font-face {
+    font-family: gothic;
+    src: url(../fonts/Century\ Gothic.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: gothic;
+}
+
+
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 8fr;
+    background-color: #F3B431;
+    position: fixed;
+}
+
+.header>.logo>img {
+    width: 60%;
+    padding: 0;
+    margin: 10% 20% 10% 20%;
+
+}
+
+
+.navbar ul {
+    list-style-type: none;
+    margin: 3% auto;
+}
+
+.navbar>ul>li {
+    display: inline;
+    margin: 0 2%;
+    font-size: 22px;
+    letter-spacing: 2px;
+    /* justify-items: end; */
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    padding: 20px;
+    color: black;
+}
+
+.navbar>ul>li :hover {
+    background-color: #FAD02E;
+    border-radius: 10px;
+}
+
+.content {
+    margin-top: 7%;
+    background-color: #2C3335;
+    padding-bottom: 3%;
+}
+
+.buyCar {
+    display: grid;
+}
+
+h1.collection {
+    text-align: center;
+    margin-top: 3%;
+    color: #DAE0E2;
+    letter-spacing: 3px;
+}
+
+.about>h1,
+h2 {
+    color: #DAE0E2;
+    text-align: center;
+    margin: 2%;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+.about>p {
+    color: #DAE0E2;
+    text-align: center;
+    margin: 1%;
+    font-size: 22px;
+}
+
+.about hr {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.about>p.paragraph {
+    width: 60%;
+    margin: 1% auto;
+    text-align: justify;
+}
+
+.map {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 2%;
+}
+
+.socialMedia {
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    grid-gap: 10%;
+}
+
+.socialMediaIcons img {
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding: 15%;
+    /* background-color: crimson; */
+    border-radius: 100%;
+}
+
+#facebook img:hover {
+    background-color: #6A89CC;
+    transition: all ease-in-out 0.2s;
+}
+
+#gitHub img:hover {
+    background-color: #7B8788;
+    transition: all ease-in-out 0.2s;
+}
+
+#linkedIn img:hover {
+    background-color: #192A56;
+    transition: all ease-in-out 0.2s;
+}
+
+#gmail img:hover {
+    background-color: #E84342;
+    transition: all ease-in-out 0.2s;
+}
+
+p.contact {
+    font-size: 24px;
+    width: 50%;
+    margin: 2% auto;
+    color: #DAE0E2;
+}
+
+.contactUs>form, .form > form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 3%;
+    border: 2px solid #DAE0E2;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 20px;
+}
+
+.contactUs>form>label, .form > form > label {
+    font-size: 22px;
+    color: #DAE0E2;
+    font-weight: 500;
+}
+
+.contactUs>form>input,
+textarea, .form > form > input {
+    font-size: 22px;
+    color: #2C3335;
+    border: none;
+    padding: 1%;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+
+
+#submit, .form > form > #signup, .form > form > #signin {
+    grid-column: 1/3;
+}
+
+#submit:hover {
+    background-color: #FAD02E;
+    color: #2C3335;
+    transition: all ease-in-out 0.2s;
+}
+.form > form > #signup:hover {
+    background-color: #FAD02E;
+    color: #2C3335;
+    transition: all ease-in-out 0.2s;
+}
+.form > form > #signin:hover {
+    background-color: #FAD02E;
+    color: #2C3335;
+    transition: all ease-in-out 0.2s;
+}
+
+.form > form > #forgotPassword{
+    text-decoration: none;
+    color: #DAE0E2;
+    font-size: 22px;
+    grid-column: 1/3;
+    text-align: center;
+    font-weight: 700;
+    padding: 1%;
+    margin: 0 auto;
+    width: 50%;
+    /* border: 1px solid; */
+}
+
+.form > form > #forgotPassword:hover{
+    color: #FAD02E;
+}
+
+.content>hr {
+    width: 70%;
+    margin: 2% auto;
+}
+
+.content h1 {
+    color: #DAE0E2;
+    text-align: center;
+    margin: 2%;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+/* .form > form{
+    width: 50%;
+    margin: 0 auto;
+    padding: 3%;
+    border: 2px solid #DAE0E2;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-row-gap: 20px;
+} */
+
+
+
+.carCollection {
+    width: 70%;
+    margin: 0 auto;
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5%;
+}
+
+
+.product>.addToCart {
+    margin: 0 0 3% 0;
+    border: 2px solid #F4C724;
+    font-size: 22px;
+    font-weight: 800;
+    border-radius: 5px;
+    width: 100%;
+    height: 40px;
+}
+
+.product>.addToCart:hover {
+    background-color: #F4C724;
+    color: white;
+    transition: all ease-in-out 0.2s;
+}
+
+
+
+.banner {
+    background-image: url(../images/cover-1.jpeg);
+    height: 80vh;
+    background-size: cover;
+    /* text-align: right; */
+    color: #F3B431;
+    display: grid;
+}
+
+.banner h2 {
+    margin: auto 0;
+    margin-left: 70%;
+    margin-right: 5%;
+    padding: 2%;
+    letter-spacing: 2px;
+    line-height: 28px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: black;
+}
+
+.slogan {
+    height: 40vh;
+    background-color: #2C3335;
+    padding: 5%;
+}
+
+.slogan>h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: #DAE0E2;
+}
+
+.sloganContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+}
+
+.sloganBox {
+    border: 1px solid;
+    margin: 10% 10%;
+    color: white;
+    height: 200px;
+    text-align: center;
+    border-radius: 10%;
+}
+
+.sloganBox>h3 {
+    margin-top: 32%;
+    font-size: 22px;
+    letter-spacing: 2px;
+}
+
+.sloganBox:hover {
+    background-color: white;
+    color: #2C3335;
+    transition: all ease-in-out 0.2s;
+}
+
+.newArrival {
+    width: 100%;
+    height: 70vh;
+    background-color: #0A3D62;
+    /* margin: 0 auto; */
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.newArrival h1 {
+    text-align: center;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    color: #DAE0E2;
+}
+
+.newArrival>div {
+    width: 70%;
+    margin: 0 auto;
+    padding: 3% 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5%;
+}
+
+.product {
+    border: 2px solid;
+    border-radius: 5%;
+    padding: 2%;
+    background-color: #DAE0E2;
+
+}
+
+.product img {
+    width: 100%;
+    height: 150px;
+    border-top-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+.product p {
+    height: 150px;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 1%;
+}
+
+.product:hover {
+    box-shadow: 0px 0px 16px 12px rgba(243, 180, 49, 0.82);
+    transition: all ease-in-out 0.2s;
+}
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: black;
+    color: #DAE0E2;
+    margin-top: -1%;
+}
+
+.footer>p {
+    font-size: 22px;
+    text-align: center;
+    margin: 3% 0 3% 0;
+    font-weight: 800;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+}
