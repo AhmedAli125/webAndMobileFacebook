@@ -82,8 +82,8 @@
   
   .content,
   .assignment-content {
-    margin: 1%;
-    padding: 1%;
+    /* margin: 1%; */
+    /* padding: 1%; */
     display: grid;
   }
   .assignments{
